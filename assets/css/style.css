@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    font-family: 'Hammersmith One', sans-serif;
+    background: url(../images/bg-img.png);
+    background-color: #000;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size:cover; 
+}
+.game{
+    padding: 1rem;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.89);
+    min-height: 400px;
+    box-shadow: 1px 2px 30.5px #000;
+    text-align: center;
+    margin: 2rem auto;   
+    float: left;
+    width: 100%;
+}
+p{   
+    width: 100%;
+}
+h1{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3em;
+    border-bottom: 1px dashed;
+    display: inline-block;
+    padding: 15px 0px;
+}
+
+#buttons-view button{
+    margin-right: 5px;
+    border-radius: 0;
+    background-color: #003a80;
+    border: 1px solid #003a80;
+    text-transform: capitalize;
+    color: #fff;
+}
+#add-Animal{
+    border-radius: 0;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #003a80;
+}
+#animal-form{
+    margin: 10px;
+    background-color: #003a80;
+    color: #fff;
+    padding: 10px;
+}
+#animal-input{
+    padding: 5px;
+}
+
+#images-view .image-box{
+    width: 31%;
+    box-shadow: 1px 2px 6.5px rgba(0, 0, 0, 0.89);
+    float: left;
+    overflow: hidden;
+    height: 250px;
+    margin: 1%;
+}
+#images-view .image-box .gif{
+    max-width: 100%;
+    height: 208px;
+    padding: 10px;
+    cursor: pointer;
+}
+#images-view .image-box .rating{
+    background-color: #003a80;
+    color: #fff;
+    height: 42px;
+    padding-top: 8px;
+}
+@media only screen and (max-width: 768px) {
+    #images-view .image-box{
+        width: 48%;
+    }
+    #animal-input{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:500px) {
+    #images-view .image-box{
+        width: 100%;
+    }
+}
