@@ -12,10 +12,9 @@
      url: queryURL,
      method: "GET"
    }).then(function(response) {
-    console.log(response);
-    for(var i=0; i<12; i++){
-   
-     console.log(response.data[i].rating);
+   // console.log(response);
+    //Print the 12 images af animal
+    for(var i=0; i<12; i++){   
      $("#images-view").append("<div class='image-box'> <img class='gif' src='"+
      response.data[i].images.downsized_still.url + "' data-still='"+
      response.data[i].images.downsized_still.url +"' data-animate='"+
@@ -24,7 +23,7 @@
  
     }
 
-
+    //when we click gif images then the src attribute will be changed
     $(".gif").on("click", function() {
         // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
         var state = $(this).attr("data-state");
@@ -39,7 +38,7 @@
    });
 
  }
-
+//Reset function 
 function reset(){
     $("#images-view").empty();
 }
